@@ -1,6 +1,8 @@
 document.getElementById('calcular').addEventListener('click', function() {
-    const percentage = document.getElementById('percentage').value;
-    const total = document.getElementById('total').value;
+    const percentage = parseFloat(document.getElementById('percentage').value);
+    const total = parseFloat(document.getElementById('total').value);
     const result = (percentage / 100) * total;
-    document.getElementById('result').innerText = `Resultado: ${result}`;
+    const formattedResult = Number.isInteger(result) ? result : result.toFixed(2);
+    document.getElementById('result').innerText = `Resultado: ${formattedResult}`;
 });
+    

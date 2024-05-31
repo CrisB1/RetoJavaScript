@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        'fauna': ['Fauna One', 'serif'],
         'source-code': ['"Source Code Pro"']
       },
     },
