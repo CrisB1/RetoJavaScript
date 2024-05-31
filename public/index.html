@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Porcentaje</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap">
+</head>
+<body class="bg-[#3c8c8c] text-teal-200 font-source-code flex items-center justify-center h-screen">
+    <div class="bg-[#1c4c54] rounded-lg text-center w-full max-w-7xl mx-4"> <!-- Ajustado a max-w-7xl y añadido mx-4 para margen -->
+        <h1 class="text-5xl text-[#3c8c8c] font-bold mt-5 mb-8">Calculadora de porcentaje</h1>
+        <hr class="border-teal-200 my-4 border-2">
+        <div class="my-4 text-3xl mb-18 mt-14 text-white">
+            Calcula el <input type="number" id="percentage" value="" class="w-70 p-2 text-left font-sans text-2xl rounded-md bg-teal-600 text-white border-0">
+            % de <input type="number" id="total" value="" class="w-70 p-2 text-left font-sans text-2xl rounded-md bg-teal-600 text-white border-0">
+        </div>
+        <div class="p-2">
+            <button id="calcular" class="bg-[#1c4c54] border-2 mt-10 border-teal-200 rounded-md py-2 px-16 hover:bg-teal-700">CALCULAR</button>
+        </div>
+        <div class="result mt-4 text-5xl font-bold p-20" id="result">Resultado: 0</div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
